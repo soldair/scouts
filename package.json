@@ -1,0 +1,16 @@
+{
+  "name": "scouts",
+  "version": "0.0.0",
+  "description": "a website for cub scout pack 78",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/*.js",
+    "postinstall": "browserify ./client/index.js > ./static/js/app.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "browserify": "~2.32.2",
+    "level": "~0.16.0"
+  }
+}
