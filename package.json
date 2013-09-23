@@ -11,6 +11,9 @@
   "license": "MIT",
   "dependencies": {
     "browserify": "~2.32.2",
-    "level": "~0.16.0"
+    "level": "~0.16.0",
+    "level-sublevel": "~5.1.1",
+    "node-uuid": "~1.4.1",
+    "mime": "~1.2.11"
   }
 }
