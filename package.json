@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node test/*.js",
-    "postinstall": "browserify ./client/index.js > ./static/js/app.js"
+    "start": "browserify ./client/index.js > ./static/js/app.js && node index.js"
   },
   "author": "",
   "license": "MIT",

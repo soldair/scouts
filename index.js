@@ -17,6 +17,11 @@ var server = http.createServer(function(req,res){
           console.log('500',(new Date())+"",'static file error',err);
         }
       }
+
+      if(/\.js$/.test(req.url)) {
+        res.setHeader('content-type','text/javascript');
+      }
+
       res.end(data);
     })
   } else if(req.url === '/' || req.url == '/index.html') {
@@ -31,5 +36,4 @@ var server = http.createServer(function(req,res){
     res.end('oh no!');
   }
 }).listen(port);
-
 
